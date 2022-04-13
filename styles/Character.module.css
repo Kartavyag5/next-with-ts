@@ -1,0 +1,60 @@
+
+.first {
+    background-color: yellow;
+    border: 4px solid red;
+}
+
+@keyframes mymove {
+    50% {background: rgb(30, 238, 238) bottom right/50px 50px;}
+  }
+
+.container{
+    margin:40px;
+    /* background-image: linear-gradient(to right,yellow,orange); */
+    background:rgb(223, 94, 212) no-repeat top left/5px 5px;
+    animation: mymove 5s infinite;
+    /* border: 5px solid black; */
+    border: 15px solid transparent;
+    padding: 15px;
+    border-image-source:url('border.png');  
+    border-image-repeat: round;
+    border-image-slice: 20 30;
+    height:50%;
+    width:50%;
+}
+
+
+.card{
+    margin:30px;
+    background-image: linear-gradient(to bottom right, green,pink );
+    border: 15px solid transparent;
+    border-radius: 8%;
+    height:50%;
+    width:50%;
+    box-shadow: 10px 10px 5px black;
+    border-image-source:url('border.png');  
+    border-image-repeat: stretch;
+    border-image-slice: 20 25;
+    position: relative;
+
+}
+
+.imageDiv{
+    margin-left: 6px !important;
+}
+
+.image{
+    margin-left: 6px !important;
+}
+
+.imageDetails{
+    border-radius: 15%;
+    border: 3px solid black !important;
+    margin: 3px !important;
+}
+
+.h1 {
+    color: coral;
+    text-align: center;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  }
