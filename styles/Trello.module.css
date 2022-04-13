@@ -17,13 +17,50 @@
     /* grid-column-gap: 10px; - if you want gap between the columns */
   }
 
+  
+
   .div1, .div2 {
     float: left;
-    width: 100px;
+    width: 150px;
     height: 35px;
     margin: 10px;
-    padding: 10px;
+    padding: 2px;
     border: 1px solid black;
+  }
+
+  @keyframes mymove {
+    50% {background: rgb(30, 238, 238) bottom right/50px 50px;}
+  }
+
+  .pActive{
+    margin:10px;
+    font-size: x-large;
+    font-weight: 500;
+    text-align: center;
+    border: 3px solid black ;
+    border-radius: 20%;
+    background: chartreuse;
+    animation: mymove 3s infinite;
+  }
+  .pComplete{
+    margin:10px;
+    font-size: x-large;
+    font-weight: 500;
+    text-align: center;
+    border: 3px solid black ;
+    border-radius: 20%;
+    background: chartreuse;
+    animation: mymove 3s infinite;
+  }
+  .pRemaining{
+    margin:10px;
+    font-size: x-large;
+    font-weight: 500;
+    text-align: center;
+    border: 3px solid black ;
+    border-radius: 20%;
+    background: orange;
+    animation: mymove 3s infinite;
   }
   
   .left,
@@ -34,6 +71,7 @@
     height: 800px;
     width: 400px;
     border: 4px solid black; /* Should be removed. Only for demonstration */
+    border-radius: 7%;
   }
   
   /* Style the left column */
